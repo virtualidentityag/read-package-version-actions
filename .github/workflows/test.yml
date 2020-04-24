@@ -10,7 +10,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
 
     - uses: actions/cache@v1
       id: cache
@@ -27,9 +27,18 @@ jobs:
     - name: Unit Test
       run: npm test
 
-    - name: Local action test
+    - name: Local action test with version
       uses: ./
       id: version
 
     - name: Get version
-      run: echo "Version is  ${{ steps.version.outputs.version }}"
+      run: echo "Version is  ${{ steps.version.outputs.propertyValue }}"
+
+    - name: Local action test with description
+      uses: ./
+      with: 
+          propertyKey: "description"
+      id: description
+
+    - name: Get description
+      run: echo "Description is  ${{ steps.description.outputs.propertyValue }}"

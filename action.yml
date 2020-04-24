@@ -1,12 +1,15 @@
-name: 'Read package.json version'
-description: 'Output version numbers with package.json'
+name: 'Read package.json version (and other properties)'
+description: 'Output version numbers (and other properties) from package.json'
 inputs:
   path:
     description: 'Path of package.json'
     default: "./"
+  propertyKey:
+    description: 'Property name to read from package.json'
+    default: "version"
 outputs:
-  version:
-    description: "Version of package"
+  propertyValue:
+    description: "Version or other properties of package.json"
 runs:
   using: 'node12'
   main: 'lib/main.js'
