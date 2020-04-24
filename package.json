@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "private": true,
   "description": "Output version numbers (and other properties) from package.json",
-  "main": "lib/main.js",
+  "main": "dist/index.js",
   "scripts": {
     "lint": "eslint src/**/*.ts",
     "lint:fix": "eslint --fix src/**/*.ts",

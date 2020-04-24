@@ -12,4 +12,4 @@ outputs:
     description: "Version or other properties of package.json"
 runs:
   using: 'node12'
-  main: 'lib/main.js'
+  main: 'dist/index.js'
