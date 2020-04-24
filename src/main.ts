@@ -9,8 +9,8 @@ async function run() {
 
     const result = getPackageProperty(path);
 
-    core.debug(`set output: version: ${result}`);
-    core.setOutput('version', result);
+    core.debug(`set output: propertyValue: ${result}`);
+    core.setOutput('propertyValue', result);
   } catch (error) {
     core.setFailed(error.message);
   }
