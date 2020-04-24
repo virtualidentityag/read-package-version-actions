@@ -10,9 +10,9 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@feature/read-any-property
+    - uses: actions/checkout@v2.0.0-prerelease
 
-    - uses: actions/cache@feature/read-any-property
+    - uses: actions/cache@v2.0.0-prerelease
       id: cache
       with:
         path: node_modules
