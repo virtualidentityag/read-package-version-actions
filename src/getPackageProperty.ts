@@ -12,8 +12,12 @@ export const findPackageJson = (path: string): string => {
 /**
  * Get version field within package.json
  * @param path
+ * @param propertyKey
  */
-export const getPackageProperty = (path: string, propertyKey: string = 'version'): string => {
+export const getPackageProperty = (
+  path: string,
+  propertyKey = 'version'
+): string => {
   const packageJson = findPackageJson(path);
 
   return JSON.parse(packageJson)[propertyKey];
