@@ -28,7 +28,7 @@ jobs:
       - uses: actions/checkout@v1
 
       - name: Read package.json
-        uses: tyankatsu0105/read-package-version-actions@v1
+        uses: virtualidentityag/read-package-property-actions@v2.0.0
         id: package-version
 
       - name: Show version number
@@ -64,7 +64,7 @@ jobs:
       - uses: actions/checkout@v1
 
       - name: Read package.json
-        uses: tyankatsu0105/read-package-version-actions@v1
+        uses: virtualidentityag/read-package-property-actions@v2.0.0
         with: 
           path: "./path/to/package.json"
         id: package-version
@@ -101,7 +101,7 @@ jobs:
       - uses: actions/checkout@v1
 
       - name: Read package.json
-        uses: tyankatsu0105/read-package-version-actions@v1
+        uses: virtualidentityag/read-package-property-actions@v2.0.0
         with: 
           path: "./path/to/package.json"
           propertyKey: "otherProperty"
