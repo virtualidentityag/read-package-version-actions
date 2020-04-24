@@ -8,6 +8,7 @@
     "lint": "eslint src/**/*.ts",
     "lint:fix": "eslint --fix src/**/*.ts",
     "commit": "git-cz",
+    "pack": "ncc build",
     "precommit": "npm run build && lint-staged && npm run test",
     "build": "tsc",
     "build:watch": "tsc -w",
@@ -25,7 +26,8 @@
   "author": "tyankatsu <frips.ryilsufupe+dev@gmail.com> (https://tyankatsu.netlify.com/)",
   "license": "MIT",
   "dependencies": {
-    "@actions/core": "^1.0.0"
+    "@actions/core": "^1.0.0",
+    "@zeit/ncc": "^0.22.1"
   },
   "devDependencies": {
     "@types/jest": "^24.0.13",
