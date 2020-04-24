@@ -1,8 +1,8 @@
 {
-  "name": "read-package-version-actions",
+  "name": "read-package-property-actions",
   "version": "1.0.0",
   "private": true,
-  "description": "Output version numbers with package.json",
+  "description": "Output version numbers (and other properties) from package.json",
   "main": "lib/main.js",
   "scripts": {
     "lint": "eslint src/**/*.ts",
